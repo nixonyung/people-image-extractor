@@ -1,0 +1,18 @@
+[project]
+name = "people-image-extractor"
+version = "0.1.0"
+requires-python = ">=3.14"
+dependencies = [
+    "libreyolo>=1.5.0",
+    "pillow>=12.3.0",
+    "tqdm>=4.70.1",
+    "xformers>=0.0.35",
+]
+
+[tool.uv.sources]
+xformers = { index = "xformers" }
+
+[[tool.uv.index]]
+name = "xformers"
+url = "https://download.pytorch.org/whl/cu130"
+explicit = true
